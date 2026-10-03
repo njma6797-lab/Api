@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "tools": [
+    {
+      "id": "android_open_app",
+      "name": "Android Open App",
+      "type": "android",
+      "action": "OPEN_APP"
+    },
+    {
+      "id": "android_open_url",
+      "name": "Android Open URL",
+      "type": "android",
+      "action": "OPEN_URL"
+    },
+    {
+      "id": "android_files",
+      "name": "Android File Manager",
+      "type": "android",
+      "actions": [
+        "CREATE_FILE",
+        "READ_FILE",
+        "EDIT_FILE"
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "type": "api",
+      "actions": [
+        "CREATE_REPOSITORY",
+        "UPLOAD_FILES",
+        "UPDATE_FILES",
+        "DEPLOY_PAGES"
+      ]
+    }
+  ]
+}
