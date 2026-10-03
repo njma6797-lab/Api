@@ -1,29 +1,71 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "apps": [
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "aliases": ["واتساب", "واتس", "الواتس", "الواتساب"],
+      "package": "com.whatsapp"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "aliases": ["جيت هاب", "جيتهايب", "جيتهاب", "جيت هوب"],
+      "package": "com.github.android"
+    },
     {
       "id": "chrome",
       "name": "Google Chrome",
-      "aliases": ["كروم", "جوجل كروم", "المتصفح"],
+      "aliases": ["كروم", "جوجل كروم", "المتصفح", "متصفح"],
       "package": "com.android.chrome"
     },
     {
       "id": "youtube",
       "name": "YouTube",
-      "aliases": ["يوتيوب", "اليوتيوب"],
+      "aliases": ["يوتيوب", "اليوتيوب", "اليو تيوب"],
       "package": "com.google.android.youtube"
     },
     {
       "id": "telegram",
       "name": "Telegram",
-      "aliases": ["تليجرام", "تلجرام"],
+      "aliases": ["تليجرام", "تلجرام", "التليجرام"],
       "package": "org.telegram.messenger"
     },
     {
-      "id": "github",
-      "name": "GitHub",
-      "aliases": ["جيت هاب", "جيتهايب"],
-      "package": "com.github.android"
+      "id": "facebook",
+      "name": "Facebook",
+      "aliases": ["فيسبوك", "فيس بوك", "الفيس"],
+      "package": "com.facebook.katana"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "aliases": ["انستجرام", "انستا", "إنستغرام"],
+      "package": "com.instagram.android"
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "aliases": ["تيك توك", "التيك توك", "تيكتوك"],
+      "package": "com.zhiliaoapp.musically"
+    },
+    {
+      "id": "zarchiver",
+      "name": "ZArchiver",
+      "aliases": ["زد اركيفر", "زد أرشيفر", "فك الضغط"],
+      "package": "ru.zdevs.zarchiver"
+    },
+    {
+      "id": "aide",
+      "name": "AIDE",
+      "aliases": ["إيد", "تطبيق ايد", "برنامج البرمجة", "AIDE"],
+      "package": "com.aide.ui"
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "aliases": ["الاعدادات", "الإعدادات", "الضبط"],
+      "package": "com.android.settings"
     }
   ]
 }
