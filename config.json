@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "project": "Stella",
+  "api_version": "v1",
+  "language": "ar-EG",
+  "default_response_format": "text",
+  "features": {
+    "voice": true,
+    "tools": true,
+    "memory": true,
+    "workflows": true,
+    "knowledge_base": true
+  }
+}
