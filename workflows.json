@@ -4,18 +4,51 @@
     {
       "id": "website_to_github",
       "name": "إنشاء موقع ونشره",
-      "trigger_examples": [
+      "triggers": [
         "اعملي موقع وارفعیه على GitHub",
-        "صمملي موقع وانشريه"
+        "صمملي موقع وانشريه",
+        "اعملي ويب سايت وانشريه"
       ],
       "steps": [
         "CREATE_WEBSITE",
-        "CREATE_FILES",
-        "CHECK_FILES",
-        "GITHUB_CREATE_REPOSITORY",
-        "GITHUB_UPLOAD_FILES",
+        "CREATE_FILE",
+        "EDIT_FILE",
+        "CHECK_PROJECT",
         "GITHUB_DEPLOY",
         "RETURN_URL"
+      ]
+    },
+    {
+      "id": "marketing_strategy",
+      "name": "إنشاء استراتيجية تسويق",
+      "triggers": [
+        "اعملي استراتيجية تسويق",
+        "حط خطة تسويق",
+        "اعملي خطة للحملة"
+      ],
+      "steps": [
+        "IDENTIFY_GOAL",
+        "IDENTIFY_AUDIENCE",
+        "SELECT_STRATEGY",
+        "CREATE_CONTENT_PLAN",
+        "CREATE_MEASUREMENT_PLAN"
+      ]
+    },
+    {
+      "id": "video_content",
+      "name": "إنشاء خطة فيديو",
+      "triggers": [
+        "اعملي فيديو",
+        "اعملي سيناريو فيديو",
+        "جهزي فيديو"
+      ],
+      "steps": [
+        "IDENTIFY_TOPIC",
+        "CREATE_HOOK",
+        "CREATE_SCRIPT",
+        "CREATE_SCENES",
+        "CREATE_VOICE_PLAN",
+        "CREATE_EDITING_PLAN"
       ]
     }
   ]
