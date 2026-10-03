@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "apps": [
+    {
+      "name": "Chrome",
+      "package": "com.android.chrome",
+      "aliases": [
+        "كروم",
+        "جوجل كروم",
+        "المتصفح"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "package": "com.google.android.youtube",
+      "aliases": [
+        "يوتيوب",
+        "اليوتيوب"
+      ]
+    }
+  ]
+}
