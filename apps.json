@@ -2,21 +2,28 @@
   "version": "1.0",
   "apps": [
     {
-      "name": "Chrome",
-      "package": "com.android.chrome",
-      "aliases": [
-        "كروم",
-        "جوجل كروم",
-        "المتصفح"
-      ]
+      "id": "chrome",
+      "name": "Google Chrome",
+      "aliases": ["كروم", "جوجل كروم", "المتصفح"],
+      "package": "com.android.chrome"
     },
     {
+      "id": "youtube",
       "name": "YouTube",
-      "package": "com.google.android.youtube",
-      "aliases": [
-        "يوتيوب",
-        "اليوتيوب"
-      ]
+      "aliases": ["يوتيوب", "اليوتيوب"],
+      "package": "com.google.android.youtube"
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "aliases": ["تليجرام", "تلجرام"],
+      "package": "org.telegram.messenger"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "aliases": ["جيت هاب", "جيتهايب"],
+      "package": "com.github.android"
     }
   ]
 }
