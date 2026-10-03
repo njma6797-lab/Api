@@ -1,9 +1,24 @@
 {
   "version": "1.0",
   "project": "Stella",
-  "api_version": "v1",
+  "api_version": "1.0",
   "language": "ar-EG",
-  "default_response_format": "text",
+  "repository": {
+    "owner": "njma6797-lab",
+    "name": "Api",
+    "branch": "main"
+  },
+  "files": {
+    "aliases": "aliases.json",
+    "commands": "commands.json",
+    "tools": "tools.json",
+    "strategies": "strategies.json",
+    "knowledge": "knowledge.json",
+    "responses": "responses.json",
+    "apps": "apps.json",
+    "workflows": "workflows.json",
+    "personality": "personality.json"
+  },
   "features": {
     "voice": true,
     "tools": true,
