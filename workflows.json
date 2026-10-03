@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "workflows": [
+    {
+      "id": "website_to_github",
+      "name": "إنشاء موقع ونشره",
+      "trigger_examples": [
+        "اعملي موقع وارفعیه على GitHub",
+        "صمملي موقع وانشريه"
+      ],
+      "steps": [
+        "CREATE_WEBSITE",
+        "CREATE_FILES",
+        "CHECK_FILES",
+        "GITHUB_CREATE_REPOSITORY",
+        "GITHUB_UPLOAD_FILES",
+        "GITHUB_DEPLOY",
+        "RETURN_URL"
+      ]
+    }
+  ]
+}
