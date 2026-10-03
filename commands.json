@@ -2,98 +2,89 @@
   "version": "1.0",
   "commands": [
     {
-      "id": "open_app",
-      "name": "فتح تطبيق",
-      "description": "فتح تطبيق مثبت على الجهاز",
-      "examples": [
-        "افتح واتساب",
-        "شغل كروم",
-        "افتح يوتيوب"
-      ],
-      "action": "OPEN_APP",
-      "requires_confirmation": false
+      "id": "greeting",
+      "intent": "greeting",
+      "action": "RESPOND_GREETING",
+      "description": "الرد على التحية"
     },
     {
-      "id": "open_url",
-      "name": "فتح رابط",
-      "description": "فتح رابط في المتصفح",
-      "examples": [
-        "افتح جوجل",
-        "افتح الموقع ده",
-        "ادخل على الرابط"
-      ],
-      "action": "OPEN_URL",
-      "requires_confirmation": false
+      "id": "open_app",
+      "intent": "open_app",
+      "action": "OPEN_APP",
+      "description": "فتح تطبيق مثبت على الجهاز",
+      "parameters": ["app_name"]
     },
     {
       "id": "send_message",
-      "name": "إرسال رسالة",
-      "description": "إرسال رسالة باستخدام وسيلة اتصال مدعومة",
-      "examples": [
-        "ابعت لأحمد",
-        "راسل أحمد",
-        "ابعتله إن الموقع خلص"
-      ],
+      "intent": "send_message",
       "action": "SEND_MESSAGE",
-      "requires_confirmation": true
-    },
-    {
-      "id": "create_file",
-      "name": "إنشاء ملف",
-      "description": "إنشاء ملف جديد",
-      "examples": [
-        "اعملي ملف HTML",
-        "أنشئ ملف JSON"
-      ],
-      "action": "CREATE_FILE",
-      "requires_confirmation": false
-    },
-    {
-      "id": "read_file",
-      "name": "قراءة ملف",
-      "description": "قراءة محتوى ملف",
-      "examples": [
-        "اقرئي الملف",
-        "وريني محتوى data.json"
-      ],
-      "action": "READ_FILE",
-      "requires_confirmation": false
-    },
-    {
-      "id": "edit_file",
-      "name": "تعديل ملف",
-      "description": "تعديل محتوى ملف موجود",
-      "examples": [
-        "عدلي الموقع",
-        "غيري النص في الملف",
-        "ضيفي كارت جديد"
-      ],
-      "action": "EDIT_FILE",
+      "description": "إنشاء وإرسال رسالة عبر وسيلة مدعومة",
+      "parameters": ["recipient", "message"],
       "requires_confirmation": true
     },
     {
       "id": "create_website",
-      "name": "إنشاء موقع",
-      "description": "إنشاء مشروع موقع ويب",
-      "examples": [
-        "اعملي موقع",
-        "أنشئيلي ويب سايت",
-        "اعملي Landing Page"
-      ],
+      "intent": "create_website",
       "action": "CREATE_WEBSITE",
-      "requires_confirmation": false
+      "description": "إنشاء مشروع موقع",
+      "parameters": ["name", "purpose", "style", "features"]
+    },
+    {
+      "id": "edit_website",
+      "intent": "edit_website",
+      "action": "EDIT_WEBSITE",
+      "description": "تعديل مشروع موقع موجود",
+      "parameters": ["project", "changes"]
+    },
+    {
+      "id": "create_file",
+      "intent": "create_file",
+      "action": "CREATE_FILE",
+      "description": "إنشاء ملف",
+      "parameters": ["filename", "content"]
+    },
+    {
+      "id": "read_file",
+      "intent": "read_file",
+      "action": "READ_FILE",
+      "description": "قراءة ملف",
+      "parameters": ["filename"]
     },
     {
       "id": "github_deploy",
-      "name": "نشر على GitHub Pages",
-      "description": "رفع مشروع ونشره على GitHub Pages",
-      "examples": [
-        "ارفعي الموقع على GitHub",
-        "انشري الموقع",
-        "اعملي Deploy على GitHub Pages"
-      ],
+      "intent": "github_deploy",
       "action": "GITHUB_DEPLOY",
+      "description": "رفع ونشر مشروع على GitHub Pages",
+      "parameters": ["repository", "branch", "path"],
       "requires_confirmation": true
+    },
+    {
+      "id": "search_web",
+      "intent": "search_web",
+      "action": "SEARCH_WEB",
+      "description": "البحث عن معلومات على الويب",
+      "parameters": ["query"]
+    },
+    {
+      "id": "create_strategy",
+      "intent": "create_strategy",
+      "action": "CREATE_STRATEGY",
+      "description": "إنشاء استراتيجية تسويق أو محتوى",
+      "parameters": ["type", "goal", "audience", "platform"]
+    },
+    {
+      "id": "create_content",
+      "intent": "create_content",
+      "action": "CREATE_CONTENT",
+      "description": "إنشاء محتوى",
+      "parameters": ["type", "topic", "platform", "tone"]
+    },
+    {
+      "id": "create_video_plan",
+      "intent": "create_video_plan",
+      "action": "CREATE_VIDEO_PLAN",
+      "description": "تجهيز خطة فيديو وسيناريو ومشاهد",
+      "parameters": ["topic", "platform", "duration", "style"]
     }
   ]
 }
