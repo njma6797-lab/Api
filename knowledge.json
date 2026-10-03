@@ -4,17 +4,22 @@
     {
       "id": "github_pages",
       "topic": "GitHub Pages",
-      "content": "خدمة استضافة للمواقع الثابتة يمكن استخدامها لنشر HTML وCSS وJavaScript."
+      "content": "GitHub Pages خدمة لاستضافة ونشر الملفات الثابتة من مستودع GitHub."
     },
     {
-      "id": "json_api",
-      "topic": "JSON Data",
-      "content": "يمكن نشر ملفات JSON واستخدام روابطها كمصدر بيانات لتطبيق Stella."
+      "id": "json_data",
+      "topic": "JSON",
+      "content": "ملفات JSON تستخدم كمصدر بيانات منظم يمكن للتطبيق تحميله عبر HTTP."
     },
     {
-      "id": "website_creation",
-      "topic": "Website Creation",
-      "content": "إنشاء موقع يمكن أن يتضمن HTML وCSS وJavaScript وملفات البيانات."
+      "id": "stella_architecture",
+      "topic": "Stella Architecture",
+      "content": "Stella تتكون من AI Engine وKnowledge وMemory وTools وWorkflows وواجهة صوتية وواجهة تطبيق."
+    },
+    {
+      "id": "tool_concept",
+      "topic": "Tools",
+      "content": "الـAI يحدد الأداة المناسبة، بينما التطبيق أو الخادم هو الذي ينفذ الأداة فعليًا."
     }
   ]
 }
