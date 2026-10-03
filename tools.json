@@ -2,36 +2,54 @@
   "version": "1.0",
   "tools": [
     {
-      "id": "android_open_app",
-      "name": "Android Open App",
+      "id": "android_app",
+      "name": "Android App Controller",
       "type": "android",
-      "action": "OPEN_APP"
-    },
-    {
-      "id": "android_open_url",
-      "name": "Android Open URL",
-      "type": "android",
-      "action": "OPEN_URL"
+      "actions": ["OPEN_APP"]
     },
     {
       "id": "android_files",
-      "name": "Android File Manager",
+      "name": "Android File Tools",
       "type": "android",
-      "actions": [
-        "CREATE_FILE",
-        "READ_FILE",
-        "EDIT_FILE"
-      ]
+      "actions": ["CREATE_FILE", "READ_FILE", "EDIT_FILE"]
+    },
+    {
+      "id": "messaging",
+      "name": "Messaging Tool",
+      "type": "android",
+      "actions": ["SEND_MESSAGE"]
+    },
+    {
+      "id": "web_search",
+      "name": "Web Search",
+      "type": "web",
+      "actions": ["SEARCH_WEB"]
+    },
+    {
+      "id": "website_builder",
+      "name": "Website Builder",
+      "type": "local",
+      "actions": ["CREATE_WEBSITE", "EDIT_WEBSITE"]
     },
     {
       "id": "github",
-      "name": "GitHub",
+      "name": "GitHub Integration",
       "type": "api",
       "actions": [
         "CREATE_REPOSITORY",
         "UPLOAD_FILES",
         "UPDATE_FILES",
         "DEPLOY_PAGES"
+      ]
+    },
+    {
+      "id": "content_engine",
+      "name": "Content Engine",
+      "type": "ai",
+      "actions": [
+        "CREATE_STRATEGY",
+        "CREATE_CONTENT",
+        "CREATE_VIDEO_PLAN"
       ]
     }
   ]
