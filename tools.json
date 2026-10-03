@@ -1,56 +1,59 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "tools": [
     {
-      "id": "android_app",
-      "name": "Android App Controller",
-      "type": "android",
-      "actions": ["OPEN_APP"]
+      "intent": "open_app",
+      "action_type": "LAUNCH_APP",
+      "execution": {
+        "method": "startActivityByPackage",
+        "fallback": "searchPackageByName"
+      }
     },
     {
-      "id": "android_files",
-      "name": "Android File Tools",
-      "type": "android",
-      "actions": ["CREATE_FILE", "READ_FILE", "EDIT_FILE"]
+      "intent": "close_app",
+      "action_type": "CLOSE_APP",
+      "execution": {
+        "method": "killBackgroundProcesses",
+        "fallback": "goHome"
+      }
     },
     {
-      "id": "messaging",
-      "name": "Messaging Tool",
-      "type": "android",
-      "actions": ["SEND_MESSAGE"]
+      "intent": "send_whatsapp_message",
+      "action_type": "DEEP_LINK_OR_ACCESSIBILITY",
+      "execution": {
+        "uri_schema": "https://api.whatsapp.com/send?phone={phone_number}&text={message_text}",
+        "fallback_intent": "android.intent.action.SEND"
+      }
     },
     {
-      "id": "web_search",
-      "name": "Web Search",
-      "type": "web",
-      "actions": ["SEARCH_WEB"]
+      "intent": "github_actions",
+      "action_type": "GITHUB_API_OR_BROWSER",
+      "execution": {
+        "bugs_url": "https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Abug",
+        "issues_url": "https://github.com/issues",
+        "pull_requests_url": "https://github.com/pulls"
+      }
     },
     {
-      "id": "website_builder",
-      "name": "Website Builder",
-      "type": "local",
-      "actions": ["CREATE_WEBSITE", "EDIT_WEBSITE"]
+      "intent": "create_website",
+      "action_type": "SYSTEM_BUILDER",
+      "execution": {
+        "handler": "generateWebTemplate"
+      }
     },
     {
-      "id": "github",
-      "name": "GitHub Integration",
-      "type": "api",
-      "actions": [
-        "CREATE_REPOSITORY",
-        "UPLOAD_FILES",
-        "UPDATE_FILES",
-        "DEPLOY_PAGES"
-      ]
+      "intent": "create_file",
+      "action_type": "FILE_IO",
+      "execution": {
+        "handler": "writeLocalFile"
+      }
     },
     {
-      "id": "content_engine",
-      "name": "Content Engine",
-      "type": "ai",
-      "actions": [
-        "CREATE_STRATEGY",
-        "CREATE_CONTENT",
-        "CREATE_VIDEO_PLAN"
-      ]
+      "intent": "search_web",
+      "action_type": "SEARCH_ENGINE",
+      "execution": {
+        "url_template": "https://www.google.com/search?q={query}"
+      }
     }
   ]
 }
