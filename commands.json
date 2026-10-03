@@ -1,0 +1,99 @@
+{
+  "version": "1.0",
+  "commands": [
+    {
+      "id": "open_app",
+      "name": "فتح تطبيق",
+      "description": "فتح تطبيق مثبت على الجهاز",
+      "examples": [
+        "افتح واتساب",
+        "شغل كروم",
+        "افتح يوتيوب"
+      ],
+      "action": "OPEN_APP",
+      "requires_confirmation": false
+    },
+    {
+      "id": "open_url",
+      "name": "فتح رابط",
+      "description": "فتح رابط في المتصفح",
+      "examples": [
+        "افتح جوجل",
+        "افتح الموقع ده",
+        "ادخل على الرابط"
+      ],
+      "action": "OPEN_URL",
+      "requires_confirmation": false
+    },
+    {
+      "id": "send_message",
+      "name": "إرسال رسالة",
+      "description": "إرسال رسالة باستخدام وسيلة اتصال مدعومة",
+      "examples": [
+        "ابعت لأحمد",
+        "راسل أحمد",
+        "ابعتله إن الموقع خلص"
+      ],
+      "action": "SEND_MESSAGE",
+      "requires_confirmation": true
+    },
+    {
+      "id": "create_file",
+      "name": "إنشاء ملف",
+      "description": "إنشاء ملف جديد",
+      "examples": [
+        "اعملي ملف HTML",
+        "أنشئ ملف JSON"
+      ],
+      "action": "CREATE_FILE",
+      "requires_confirmation": false
+    },
+    {
+      "id": "read_file",
+      "name": "قراءة ملف",
+      "description": "قراءة محتوى ملف",
+      "examples": [
+        "اقرئي الملف",
+        "وريني محتوى data.json"
+      ],
+      "action": "READ_FILE",
+      "requires_confirmation": false
+    },
+    {
+      "id": "edit_file",
+      "name": "تعديل ملف",
+      "description": "تعديل محتوى ملف موجود",
+      "examples": [
+        "عدلي الموقع",
+        "غيري النص في الملف",
+        "ضيفي كارت جديد"
+      ],
+      "action": "EDIT_FILE",
+      "requires_confirmation": true
+    },
+    {
+      "id": "create_website",
+      "name": "إنشاء موقع",
+      "description": "إنشاء مشروع موقع ويب",
+      "examples": [
+        "اعملي موقع",
+        "أنشئيلي ويب سايت",
+        "اعملي Landing Page"
+      ],
+      "action": "CREATE_WEBSITE",
+      "requires_confirmation": false
+    },
+    {
+      "id": "github_deploy",
+      "name": "نشر على GitHub Pages",
+      "description": "رفع مشروع ونشره على GitHub Pages",
+      "examples": [
+        "ارفعي الموقع على GitHub",
+        "انشري الموقع",
+        "اعملي Deploy على GitHub Pages"
+      ],
+      "action": "GITHUB_DEPLOY",
+      "requires_confirmation": true
+    }
+  ]
+}
