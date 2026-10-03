@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "knowledge": [
+    {
+      "id": "github_pages",
+      "topic": "GitHub Pages",
+      "content": "خدمة استضافة للمواقع الثابتة يمكن استخدامها لنشر HTML وCSS وJavaScript."
+    },
+    {
+      "id": "json_api",
+      "topic": "JSON Data",
+      "content": "يمكن نشر ملفات JSON واستخدام روابطها كمصدر بيانات لتطبيق Stella."
+    },
+    {
+      "id": "website_creation",
+      "topic": "Website Creation",
+      "content": "إنشاء موقع يمكن أن يتضمن HTML وCSS وJavaScript وملفات البيانات."
+    }
+  ]
+}
